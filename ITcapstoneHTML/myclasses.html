@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F8F9FA;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #2C3E50;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 0;
+            display: block;
+            border-radius: 5px;
+        }
+        .sidebar a:hover {
+            background-color: #34495E;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .header {
+            background-color: #2C3E50;
+            color: white;
+            padding: 15px;
+            text-align: right;
+        }
+        .dashboard-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .class-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .class-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .class-item button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .class-item button.remove {
+            background-color: #DC3545;
+        }
+        .add-class-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>TeachMeUMB</h2>
+        <a href="#">Dashboard</a>
+        <a href="#">Appointments</a>
+        <a href="#">Find a Tutor</a>
+        <a href="#">My Classes</a>
+        <a href="#">Profile</a>
+        <a href="#">Payments</a>
+        <a href="#">Support</a>
+    </div>
+    <div class="main-content">
+        <div class="header">User Icon</div>
+        <div class="dashboard-container">
+            <h3>My Classes</h3>
+            <div class="class-list">
+                <div class="class-item">
+                    <span><strong>IT 116:</strong> Introduction to Scripting</span>
+                    <div>
+                        <button>Find a Tutor</button>
+                        <button class="remove">Remove</button>
+                    </div>
+                </div>
+                <div class="class-item">
+                    <span><strong>IT 240:</strong> Web Fluency</span>
+                    <div>
+                        <button>Find a Tutor</button>
+                        <button class="remove">Remove</button>
+                    </div>
+                </div>
+                <div class="class-item">
+                    <span><strong>IT 244:</strong> Introduction to Linux/Unix</span>
+                    <div>
+                        <button>Find a Tutor</button>
+                        <button class="remove">Remove</button>
+                    </div>
+                </div>
+                <div class="class-item">
+                    <span><strong>CS 285L:</strong> Social Issues and Ethics in Computing</span>
+                    <div>
+                        <button>Find a Tutor</button>
+                        <button class="remove">Remove</button>
+                    </div>
+                </div>
+                <div class="class-item">
+                    <span><strong>IT 116:</strong> Introduction to Scripting</span>
+                    <div>
+                        <button>Find a Tutor</button>
+                        <button class="remove">Remove</button>
+                    </div>
+                </div>
+            </div>
+            <button class="add-class-button">Add Classes</button>
+        </div>
+    </div>
+</body>
+</html>

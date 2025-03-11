@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F8F9FA;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #2C3E50;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 0;
+            display: block;
+            border-radius: 5px;
+        }
+        .sidebar a:hover {
+            background-color: #34495E;
+        }
+        .sidebar .filters {
+            margin-top: 20px;
+        }
+        .sidebar .filters input, .sidebar .filters select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .header {
+            background-color: #2C3E50;
+            color: white;
+            padding: 15px;
+            text-align: right;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .search-bar input {
+            width: 50%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .dashboard-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .dashboard-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        .dashboard-card button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .dashboard-card button.cancel {
+            background-color: #DC3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>TeachMeUMB</h2>
+        <a href="#">Dashboard</a>
+        <a href="#">Appointments</a>
+        <a href="#">Find a Tutor</a>
+        <a href="#">My Classes</a>
+        <a href="#">Profile</a>
+        <a href="#">Payments</a>
+        <a href="#">Support</a>
+        <div class="filters">
+            <h3>Filters</h3>
+            <label>Course</label>
+            <select><option>Select Course</option></select>
+            <label>Availability</label>
+            <input type="text" placeholder="Any Time">
+            <label>Price Range</label>
+            <input type="text" placeholder="$0 - $20">
+            <label>Rating</label>
+            <input type="text" placeholder="Any">
+            <label>Experience</label>
+            <input type="text" placeholder="Any">
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="header">User Icon</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search by course, tutor...">
+        </div>
+        <div class="dashboard-container">
+            <h3>Available Tutors</h3>
+            <div class="cards-container">
+                <div class="dashboard-card">
+                    <h4>Tutor Name</h4>
+                    <p>Calculus Tutor</p>
+                    <p>★★★★☆</p>
+                    <button>Book Session</button>
+                </div>
+                <div class="dashboard-card">
+                    <h4>Tutor Name</h4>
+                    <p>Physics Tutor</p>
+                    <p>★★★★★</p>
+                    <button>Book Session</button>
+                </div>
+                <div class="dashboard-card">
+                    <h4>Tutor Name</h4>
+                    <p>IT Tutor</p>
+                    <p>★★★★☆</p>
+                    <button>Book Session</button>
+                </div>
+                <div class="dashboard-card">
+                    <h4>Tutor Name</h4>
+                    <p>Biology Tutor</p>
+                    <p>★★★☆☆</p>
+                    <button>Book Session</button>
+                </div>
+                <div class="dashboard-card">
+                    <h4>Tutor Name</h4>
+                    <p>Physics Tutor</p>
+                    <p>★★★★★</p>
+                    <button>Book Session</button>
+                </div>
+                <div class="dashboard-card">
+                    <h4>Tutor Name</h4>
+                    <p>CS Tutor</p>
+                    <p>★★★☆☆</p>
+                    <button>Book Session</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
